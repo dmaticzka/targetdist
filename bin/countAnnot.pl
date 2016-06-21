@@ -1,4 +1,4 @@
-#!/usr/local/perl/bin/perl
+#!/usr/bin/env perl
 use feature ':5.10';
 use strict 'vars';
 use warnings;
@@ -31,7 +31,7 @@ my $first_column;
 my $help;
 my $man;
 my $debug;
-my $result = GetOptions (	
+my $result = GetOptions (
 #							"id=s"  => \$first_column,
                             "help"	=> \$help,
 							"man"	=> \$man,
