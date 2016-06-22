@@ -1,0 +1,14 @@
+rRNA	0	targetdist/test/test_hg19.bed
+tRNA	141	targetdist/test/test_hg19.bed
+snoRNA	10	targetdist/test/test_hg19.bed
+snRNA	115	targetdist/test/test_hg19.bed
+lincRNA	22	targetdist/test/test_hg19.bed
+misc_ncRNA	11	targetdist/test/test_hg19.bed
+pseudogene	3	targetdist/test/test_hg19.bed
+protcod_as	11	targetdist/test/test_hg19.bed
+3UTR	49	targetdist/test/test_hg19.bed
+5UTR	23	targetdist/test/test_hg19.bed
+exon	34	targetdist/test/test_hg19.bed
+intron	425	targetdist/test/test_hg19.bed
+antisense	45	targetdist/test/test_hg19.bed
+not_annotated	111	targetdist/test/test_hg19.bed

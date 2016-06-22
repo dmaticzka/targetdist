@@ -1,0 +1,14 @@
+rRNA	0	targetdist/test/test_dm3.bed
+tRNA	0	targetdist/test/test_dm3.bed
+snoRNA	0	targetdist/test/test_dm3.bed
+snRNA	0	targetdist/test/test_dm3.bed
+lincRNA	3	targetdist/test/test_dm3.bed
+misc_ncRNA	0	targetdist/test/test_dm3.bed
+pseudogene	4	targetdist/test/test_dm3.bed
+protcod_as	22	targetdist/test/test_dm3.bed
+3UTR	239	targetdist/test/test_dm3.bed
+5UTR	98	targetdist/test/test_dm3.bed
+exon	355	targetdist/test/test_dm3.bed
+intron	120	targetdist/test/test_dm3.bed
+antisense	38	targetdist/test/test_dm3.bed
+not_annotated	121	targetdist/test/test_dm3.bed
