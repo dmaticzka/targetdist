@@ -19,10 +19,10 @@ tar xf targetdist_annotation_v0_1.tar.bz2
 Targetdist contains three scripts to count hits for pre-calculated annotations for hg19, dm3 and mm10.
 The scripts take two positional arguments.
 The first positional argument is the filename of the bed coordinates to summarize.
-The results will be written to the file suppliead as second positional argument.
+The results will be written to the file supplied as second positional argument.
 The input bed files should have at least 6 columns and include strand information.
 All fields beyond the 6th column will be ignored.
-Chromosomes should be given as UCSC identifiers.
+The pre-calculated annotations use UCSC-like chromosome identifiers.
 
 Example calls:
 
