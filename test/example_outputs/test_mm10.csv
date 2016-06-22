@@ -9,5 +9,5 @@ pseudogene	1	targetdist/test/test_mm10.bed
 5UTR	6	targetdist/test/test_mm10.bed
 exon	24	targetdist/test/test_mm10.bed
 intron	749	targetdist/test/test_mm10.bed
-antisense	25	targetdist/test/test_mm10.bed
-not_annotated	113	targetdist/test/test_mm10.bed
+antisense	31	targetdist/test/test_mm10.bed
+not_annotated	107	targetdist/test/test_mm10.bed
