@@ -22,7 +22,7 @@ $BASEDIR/annotation/mm10/mm10_ensGene_3utr.bed \
 $BASEDIR/annotation/mm10/mm10_ensGene_5utr.bed \
 $BASEDIR/annotation/mm10/mm10_ensGene_codex.bed \
 $BASEDIR/annotation/mm10/mm10_ensGene_introns.bed \
-$BASEDIR/annotation_antisense.bed \
+$BASEDIR/annotation/mm10/annotation_antisense_mm10.bed \
 -names rRNA tRNA snoRNA snRNA lincRNA misc_ncRNA pseudogene 3UTR 5UTR exon intron antisense | \
 $BASEDIR/bin/countAnnot.pl | \
 $BASEDIR/bin/colAdd.sh $BED > $OUT.csv
