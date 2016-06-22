@@ -92,4 +92,10 @@ zcat test/test_mm10.genomic_targets.bed_annot.gz | bin/countAnnot.pl | bin/colAd
 R --slave --args test/test_mm10.genomic_targets.csv test/test_mm10.genomic_targets rRNA tRNA snoRNA snRNA lincRNA misc_ncRNA pseudogene 3UTR 5UTR exon intron antisense intergenic < bin/plotGenomicTargets.R && touch test/test_mm10.genomic_targets
 ```
 
-### Calculate target distributions
+###
+
+test calls
+
+`targetdist/count_hg19.sh targetdist/test/test_hg19.bed targetdist/test_hg19_fromotherdir`
+`targetdist/count_dm3.sh targetdist/test/test_dm3.bed targetdist/test_dm3_fromotherdir`
+`targetdist/count_mm10.sh targetdist/test/test_mm10.bed targetdist/test_mm10_fromotherdir`

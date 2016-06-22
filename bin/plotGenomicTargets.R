@@ -20,19 +20,19 @@ d <- read.table(args[1], head=F, col.names=c("target", "count", "id"))
 order_targets=names
 d$target <- factor(d$target, levels=order_targets, ordered=T)
 
-target_colours = c(
-    "roX1"    = "#3465a4",
-    "roX2"    = "#EF2929",
-    "CR41602" = "#4E9A06",
-    "rRNA"    = "#73d216",
-    "snoRNA"  = "#75507b",
-    "snRNA"   = "#ad7fa8",
-    "ncRNA"   = "#2e3436",
-    "tRNA"    = "#babdb6",
-    "3UTR"    = "#c4a000",
-    "5UTR"    = "#edd400",
-    "exon"    = "#f57900",
-    "intron"  = "#fcaf3e")
+# target_colours = c(
+#     "roX1"    = "#3465a4",
+#     "roX2"    = "#EF2929",
+#     "CR41602" = "#4E9A06",
+#     "rRNA"    = "#73d216",
+#     "snoRNA"  = "#75507b",
+#     "snRNA"   = "#ad7fa8",
+#     "ncRNA"   = "#2e3436",
+#     "tRNA"    = "#babdb6",
+#     "3UTR"    = "#c4a000",
+#     "5UTR"    = "#edd400",
+#     "exon"    = "#f57900",
+#     "intron"  = "#fcaf3e")
 
 # plot fractions (scaled to 1)
 p1 <-
