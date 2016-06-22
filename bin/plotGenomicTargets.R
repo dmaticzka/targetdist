@@ -38,7 +38,7 @@ target_colours = c(
 p1 <-
 ggplot(d) +
 geom_bar(aes(id, fill=target, weight=count), position="fill") +
-scale_y_continuous("fraction of cross-linking events") +
+scale_y_continuous("fraction of X") +
 # scale_fill_manual(values = target_colours) +
 guides(fill = guide_legend(reverse = TRUE))
 

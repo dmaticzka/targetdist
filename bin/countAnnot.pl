@@ -50,7 +50,7 @@ sub getCount {
     }
   }
 
-  # if all elements are zero, return extra position for "intergenetic"
+  # if all elements are zero, return extra position for "not_annotated"
   return scalar @_;
 }
 
@@ -60,12 +60,12 @@ sub getCount {
 
 my @counts;
 
-# parse header, add "intergenetic"
+# parse header, add "not_annotated"
 # first five! fields are bed6
 my $header = <>;
 chomp $header;
 my (undef,undef,undef,undef,undef,@header) = split("\t", $header);
-push @header, "intergenic";
+push @header, "not_annotated";
 $debug and say STDERR join("§", @header);
 
 # parse count fields, starting from 7th
