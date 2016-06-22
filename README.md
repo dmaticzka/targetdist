@@ -21,7 +21,7 @@ The scripts take two positional arguments.
 The first positional argument is the filename of the bed coordinates to summarize.
 Results will be written to the files prefixed with the second positional argument.
 Currently this are the calculated table of hits (.csv) and two summary plots (.png, .pdf).
-The input bed filesshould have at least 6 columns and include strand information.
+The input bed should have at least 6 columns and include strand information.
 All fields beyond the 6th column will be ignored.
 The pre-calculated annotations use UCSC-like chromosome identifiers.
 
