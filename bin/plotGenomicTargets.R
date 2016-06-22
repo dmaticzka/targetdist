@@ -38,7 +38,7 @@ d$target <- factor(d$target, levels=order_targets, ordered=T)
 p1 <-
 ggplot(d) +
 geom_bar(aes(id, fill=target, weight=count), position="fill") +
-scale_y_continuous("fraction of X") +
+scale_y_continuous("fraction of hits") +
 # scale_fill_manual(values = target_colours) +
 guides(fill = guide_legend(reverse = TRUE))
 
@@ -49,7 +49,7 @@ p2 <-
 ggplot(d) +
 geom_bar(aes(target, fill=target, weight=count)) +
 theme(axis.text.x=element_text(angle=70, hjust=1)) +
-scale_y_continuous("thousand X") +
+scale_y_continuous("thousand hits") +
 theme(legend.position="none") +
 # scale_fill_manual(values = target_colours) +
 guides(fill = guide_legend(reverse = TRUE))
