@@ -1,12 +1,12 @@
 # targetdist
 
-Count and plot distribution of regions over hierarchical sets of genomic targets.
+Targetdist counts the number of peaks, crosslinking events or other intervals overlapping various classes of genomic targets, such as ncRNAs, UTRs, introns and exons. Should a peak overlap multiple annotations it is attributed to the annotation with highest priority. Priority of target classes descends from left to right.
 
 ## Installation
 
-These scripts require 'bedtools' and R packages "ggplot2" and "gridExtra".
+The targetdist scripts require 'bedtools' and R packages 'ggplot2' and 'gridExtra'.
 
-The pre-calculated annotations can be downloaded at http://www.bioinf.uni-freiburg.de/~maticzkd/targetdist_annotation_v0_1.tar.bz2 and have to be extracted in the targetdist base directory.
+The pre-calculated annotations can be downloaded from http://www.bioinf.uni-freiburg.de/~maticzkd/targetdist_annotation_v0_1.tar.bz2 and should be be extracted in the targetdist base directory as shown below.
 
 ```
 cd targetdist
@@ -19,17 +19,20 @@ tar xf targetdist_annotation_v0_1.tar.bz2
 Targetdist contains three scripts to count hits for pre-calculated annotations for hg19, dm3 and mm10.
 The scripts take two positional arguments.
 The first positional argument is the filename of the bed coordinates to summarize.
-The results will be written to the file supplied as second positional argument.
-The input bed files should have at least 6 columns and include strand information.
+Results will be written to the files prefixed with the second positional argument.
+Currently this are the calculated table of hits (.csv) and two summary plots (.png, .pdf).
+The input bed filesshould have at least 6 columns and include strand information.
 All fields beyond the 6th column will be ignored.
 The pre-calculated annotations use UCSC-like chromosome identifiers.
 
 Example calls:
 
-* `./count_hg19.sh test/test_hg19.bed test_hg19.csv`
-* `./count_dm3.sh test/test_hg19.bed test_hg19.csv`
-* `./count_mm10.sh test/test_hg19.bed test_hg19.csv`
+* `./targetdist_hg19.sh test/test_hg19.bed test_hg19.csv`
+* `./targetdist_dm3.sh test/test_hg19.bed test_hg19.csv`
+* `./targetdist_mm10.sh test/test_hg19.bed test_hg19.csv`
 
 ## Example output
 
-![targetdist example plot](test/example_outputs/test_dm3.png?raw=true "tergetdist example plot")
+![targetdist example hg19](test/example_outputs/test_hg19.png?raw=true "targetdist example hg19")
+![targetdist example dm3](test/example_outputs/test_dm3.png?raw=true "targetdist example dm3")
+![targetdist example mm10](test/example_outputs/test_mm10.png?raw=true "targetdist example mm10")
