@@ -31,8 +31,13 @@ Example calls:
 * `./targetdist_dm3.sh test/test_hg19.bed test_hg19.csv`
 * `./targetdist_mm10.sh test/test_hg19.bed test_hg19.csv`
 
-## Example output
+## Example plots
 
+### hg19
 ![targetdist example hg19](test/example_outputs/test_hg19.png?raw=true "targetdist example hg19")
+
+### dm3
 ![targetdist example dm3](test/example_outputs/test_dm3.png?raw=true "targetdist example dm3")
+
+### mm10
 ![targetdist example mm10](test/example_outputs/test_mm10.png?raw=true "targetdist example mm10")
