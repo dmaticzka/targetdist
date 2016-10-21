@@ -61,10 +61,10 @@ sub getCount {
 my @counts;
 
 # parse header, add "not_annotated"
-# first five! fields are bed6
+# first six fields are bed6; recently changed by bedtools, should scan for non '#' and non ''
 my $header = <>;
 chomp $header;
-my (undef,undef,undef,undef,undef,@header) = split("\t", $header);
+my (undef,undef,undef,undef,undef,undef,@header) = split("\t", $header);
 push @header, "not_annotated";
 $debug and say STDERR join("§", @header);
 

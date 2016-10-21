@@ -6,6 +6,8 @@ Targetdist counts the number of peaks, crosslinking events or other intervals ov
 
 The targetdist scripts require _perl_, _bedtools_ and R packages _ggplot2_ and _gridExtra_.
 
+Requires at least bedtools 2.16.0.
+
 The pre-calculated annotations can be downloaded from http://www.bioinf.uni-freiburg.de/~maticzkd/targetdist_annotation_v0_1.tar.bz2 and should be be extracted in the targetdist base directory as shown below.
 
 ```
