@@ -11,19 +11,19 @@ cat $1 | cut -f 1-6 | \
 bedtools annotate -counts -s \
 -i - \
 -files \
-$BASEDIR/annotation/hg19/type_rRNA.bed \
-$BASEDIR/annotation/hg19/tRNAgenes.bed \
-$BASEDIR/annotation/hg19/type_snoRNA.bed \
-$BASEDIR/annotation/hg19/type_snRNA.bed \
-$BASEDIR/annotation/hg19/type_lincRNA.bed \
-$BASEDIR/annotation/hg19/type_misc_ncRNA.bed \
-$BASEDIR/annotation/hg19/type_pseudogene.bed \
-$BASEDIR/annotation/hg19/type_protein_coding_antisense.bed \
-$BASEDIR/annotation/hg19/3utr.bed \
-$BASEDIR/annotation/hg19/5utr.bed \
-$BASEDIR/annotation/hg19/codex.bed \
-$BASEDIR/annotation/hg19/introns.bed \
-$BASEDIR/annotation/hg19/annotation_antisense_hg19.bed \
+$BASEDIR/annotation/hg19/type_rRNA.bed.gz \
+$BASEDIR/annotation/hg19/tRNAgenes.bed.gz \
+$BASEDIR/annotation/hg19/type_snoRNA.bed.gz \
+$BASEDIR/annotation/hg19/type_snRNA.bed.gz \
+$BASEDIR/annotation/hg19/type_lincRNA.bed.gz \
+$BASEDIR/annotation/hg19/type_misc_ncRNA.bed.gz \
+$BASEDIR/annotation/hg19/type_pseudogene.bed.gz \
+$BASEDIR/annotation/hg19/type_protein_coding_antisense.bed.gz \
+$BASEDIR/annotation/hg19/3utr.bed.gz \
+$BASEDIR/annotation/hg19/5utr.bed.gz \
+$BASEDIR/annotation/hg19/codex.bed.gz \
+$BASEDIR/annotation/hg19/introns.bed.gz \
+$BASEDIR/annotation/hg19/annotation_antisense_hg19.bed.gz \
 -names rRNA tRNA snoRNA snRNA lincRNA misc_ncRNA pseudogene protcod_as 3UTR 5UTR exon intron antisense | \
 $BASEDIR/bin/countAnnot.pl | \
 $BASEDIR/bin/colAdd.sh $BED > $OUT.csv

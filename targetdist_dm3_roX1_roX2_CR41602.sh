@@ -11,19 +11,19 @@ cat $1 | cut -f 1-6 | \
 bedtools annotate -counts -s \
 -i - \
 -files \
-$BASEDIR/annotation/dm3/dm3_refGene_whole_gene_rox1.bed \
-$BASEDIR/annotation/dm3/dm3_refGene_whole_gene_rox2.bed \
-$BASEDIR/annotation/dm3/dm3_refGene_whole_gene_CR41602.bed \
-$BASEDIR/annotation/dm3/ensembl_rrna.ucsc.gff.bed \
-$BASEDIR/annotation/dm3/ensembl_snorna.ucsc.gff.bed \
-$BASEDIR/annotation/dm3/ensembl_snrna.ucsc.gff.bed \
-$BASEDIR/annotation/dm3/ensembl_ncrna.ucsc.gff.bed \
-$BASEDIR/annotation/dm3/ensembl_trna.ucsc.gff.bed \
-$BASEDIR/annotation/dm3/ensGene_3utr.bed \
-$BASEDIR/annotation/dm3/ensGene_5utr.bed \
-$BASEDIR/annotation/dm3/ensGene_codex.bed \
-$BASEDIR/annotation/dm3/ensGene_introns.bed \
-$BASEDIR/annotation/dm3/annotation_antisense_dm3.bed \
+$BASEDIR/annotation/dm3/dm3_refGene_whole_gene_rox1.bed.gz \
+$BASEDIR/annotation/dm3/dm3_refGene_whole_gene_rox2.bed.gz \
+$BASEDIR/annotation/dm3/dm3_refGene_whole_gene_CR41602.bed.gz \
+$BASEDIR/annotation/dm3/ensembl_rrna.ucsc.gff.bed.gz \
+$BASEDIR/annotation/dm3/ensembl_snorna.ucsc.gff.bed.gz \
+$BASEDIR/annotation/dm3/ensembl_snrna.ucsc.gff.bed.gz \
+$BASEDIR/annotation/dm3/ensembl_ncrna.ucsc.gff.bed.gz \
+$BASEDIR/annotation/dm3/ensembl_trna.ucsc.gff.bed.gz \
+$BASEDIR/annotation/dm3/ensGene_3utr.bed.gz \
+$BASEDIR/annotation/dm3/ensGene_5utr.bed.gz \
+$BASEDIR/annotation/dm3/ensGene_codex.bed.gz \
+$BASEDIR/annotation/dm3/ensGene_introns.bed.gz \
+$BASEDIR/annotation/dm3/annotation_antisense_dm3.bed.gz \
 -names roX1 roX2 CR41602 rRNA snoRNA snRNA ncRNA tRNA 3UTR 5UTR exon intron antisense | \
 $BASEDIR/bin/countAnnot.pl | \
 $BASEDIR/bin/colAdd.sh $BED > $OUT.csv

@@ -11,18 +11,18 @@ cat $1 | cut -f 1-6 | \
 bedtools annotate -counts -s \
 -i - \
 -files \
-$BASEDIR/annotation/mm10/ensGene77.type_rRNA.ucsc.gff.bed \
-$BASEDIR/annotation/mm10/mm10_tRNAgenes.ucsc.gff.bed \
-$BASEDIR/annotation/mm10/ensGene77.type_snoRNA.ucsc.gff.bed \
-$BASEDIR/annotation/mm10/ensGene77.type_snRNA.ucsc.gff.bed \
-$BASEDIR/annotation/mm10/ensGene77.type_lincRNA.ucsc.gff.bed \
-$BASEDIR/annotation/mm10/ensGene77.type_misc_ncRNA.ucsc.gff.bed \
-$BASEDIR/annotation/mm10/ensGene77.type_pseudogene.ucsc.gff.bed \
-$BASEDIR/annotation/mm10/mm10_ensGene_3utr.bed \
-$BASEDIR/annotation/mm10/mm10_ensGene_5utr.bed \
-$BASEDIR/annotation/mm10/mm10_ensGene_codex.bed \
-$BASEDIR/annotation/mm10/mm10_ensGene_introns.bed \
-$BASEDIR/annotation/mm10/annotation_antisense_mm10.bed \
+$BASEDIR/annotation/mm10/ensGene77.type_rRNA.ucsc.gff.bed.gz \
+$BASEDIR/annotation/mm10/mm10_tRNAgenes.ucsc.gff.bed.gz \
+$BASEDIR/annotation/mm10/ensGene77.type_snoRNA.ucsc.gff.bed.gz \
+$BASEDIR/annotation/mm10/ensGene77.type_snRNA.ucsc.gff.bed.gz \
+$BASEDIR/annotation/mm10/ensGene77.type_lincRNA.ucsc.gff.bed.gz \
+$BASEDIR/annotation/mm10/ensGene77.type_misc_ncRNA.ucsc.gff.bed.gz \
+$BASEDIR/annotation/mm10/ensGene77.type_pseudogene.ucsc.gff.bed.gz \
+$BASEDIR/annotation/mm10/mm10_ensGene_3utr.bed.gz \
+$BASEDIR/annotation/mm10/mm10_ensGene_5utr.bed.gz \
+$BASEDIR/annotation/mm10/mm10_ensGene_codex.bed.gz \
+$BASEDIR/annotation/mm10/mm10_ensGene_introns.bed.gz \
+$BASEDIR/annotation/mm10/annotation_antisense_mm10.bed.gz \
 -names rRNA tRNA snoRNA snRNA lincRNA misc_ncRNA pseudogene 3UTR 5UTR exon intron antisense | \
 $BASEDIR/bin/countAnnot.pl | \
 $BASEDIR/bin/colAdd.sh $BED > $OUT.csv
