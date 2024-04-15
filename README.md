@@ -1,4 +1,7 @@
-# targetdist
+# targetdist [archived]
+
+> [!WARNING]  
+> Development of this tool has stopped, the repository is archived.
 
 Targetdist counts the number of peaks, crosslinking events or other intervals overlapping various classes of genomic targets, such as ncRNAs, UTRs, introns and exons. Should a peak overlap multiple annotations it is attributed to the annotation with highest priority. Priority of target classes descends from left to right.
 
